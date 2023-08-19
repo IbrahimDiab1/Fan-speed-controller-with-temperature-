@@ -28,7 +28,7 @@ The main objective of this project is to create a temperature-controlled fan sys
 6. The DC motor rotates clockwise or stops based on the fan state.
 
 ## proteus Simulation
-![Simulation](Proteus%20Simulation/sim.png)
+![Simulation](Proteus_Simulation/sim.png)
 
 ## Project Structure
 
