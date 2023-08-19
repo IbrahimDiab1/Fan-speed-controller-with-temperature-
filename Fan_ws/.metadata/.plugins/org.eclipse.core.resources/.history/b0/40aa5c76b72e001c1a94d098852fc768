@@ -1,0 +1,45 @@
+ /******************************************************************************
+ *
+ * Module: DC Motor
+ *
+ * File Name: dc_motor.h
+ *
+ * Description: Header file for the DC Motor driver
+ *
+ * Author: Ibrahim_Diab
+ *
+ *******************************************************************************/
+
+#ifndef DC_MOTOR_H_
+#define DC_MOTOR_H_
+
+#include "std_types.h"
+
+#define TWO_MOTORS_MODE    0
+
+#define DC_MOTOR_IN1_PORT_ID PORTB_ID
+#define DC_MOTOR_IN1_PIN_NUM PIN1_ID
+
+#define DC_MOTOR_IN2_PORT_ID PORTB_ID
+#define DC_MOTOR_IN2_PIN_NUM PIN2_ID
+
+#if(TWO_MOTORS_MODE)
+
+#define DC_MOTOR_IN3_PORT_ID
+#define DC_MOTOR_IN3_PIN_NUM
+
+#define DC_MOTOR_IN4_PORT_ID
+#define DC_MOTOR_IN4_PIN_NUM
+
+#endif
+
+typedef enum{
+CW , A_CW
+}DcMotor_State;
+
+void DcMotor_Init(void);
+
+void DcMotor_Rotate(DcMotor_State state,uint8 speed);
+
+
+#endif /* DC_MOTOR_H_ */

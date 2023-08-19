@@ -1,0 +1,55 @@
+/******************************************************************************
+ *
+ * Module: DC Motor
+ *
+ * File Name: dc_motor.c
+ *
+ * Description: Source file for the DC Motor driver
+ *
+ * Author: Ibrahim_Diab
+ *
+ *******************************************************************************/
+
+#include "std_types.h"
+#include "dc_motor.h"
+#include "gpio.h"
+#include "pwm.h"
+void DcMotor_Init(void) {
+
+GPIO_setupPinDirection(DC_MOTOR_IN1_PORT_ID,DC_MOTOR_IN1_PIN_NUM,PIN_OUTPUT);
+GPIO_setupPinDirection(DC_MOTOR_IN2_PORT_ID,DC_MOTOR_IN2_PIN_NUM,PIN_OUTPUT);
+
+GPIO_writePin(DC_MOTOR_IN1_PORT_ID,DC_MOTOR_IN1_PIN_NUM,0);
+GPIO_writePin(DC_MOTOR_IN2_PORT_ID,DC_MOTOR_IN2_PIN_NUM,0);
+
+#if(TWO_MOTORS_MODE)
+
+GPIO_setupPinDirection(DC_MOTOR_IN3_PORT_ID,DC_MOTOR_IN3_PIN_NUM,PIN_OUTPUT);
+GPIO_setupPinDirection(DC_MOTOR_IN4_PORT_ID,DC_MOTOR_IN4_PIN_NUM,PIN_OUTPUT);
+
+GPIO_writePin(DC_MOTOR_IN3_PORT_ID,DC_MOTOR_IN3_PIN_NUM,0);
+GPIO_writePin(DC_MOTOR_IN4_PORT_ID,DC_MOTOR_IN4_PIN_NUM,0);
+
+#endif
+}
+
+void DcMotor_Rotate(DcMotor_State state, uint8 speed) {
+
+PWM_Timer0_Start(speed);
+if (state) {
+
+GPIO_writePin(DC_MOTOR_IN1_PORT_ID,DC_MOTOR_IN1_PIN_NUM,0);
+GPIO_writePin(DC_MOTOR_IN2_PORT_ID,DC_MOTOR_IN2_PIN_NUM,1);
+#if(TWO_MOTORS_MODE)
+GPIO_writePin(DC_MOTOR_IN3_PORT_ID,DC_MOTOR_IN3_PIN_NUM,0);
+GPIO_writePin(DC_MOTOR_IN4_PORT_ID,DC_MOTOR_IN4_PIN_NUM,1);
+#endif
+} else {
+GPIO_writePin(DC_MOTOR_IN1_PORT_ID,DC_MOTOR_IN1_PIN_NUM,1);
+GPIO_writePin(DC_MOTOR_IN2_PORT_ID,DC_MOTOR_IN2_PIN_NUM,0);
+#if(TWO_MOTORS_MODE)
+GPIO_writePin(DC_MOTOR_IN3_PORT_ID,DC_MOTOR_IN3_PIN_NUM,1);
+GPIO_writePin(DC_MOTOR_IN4_PORT_ID,DC_MOTOR_IN4_PIN_NUM,0);
+#endif
+}
+}

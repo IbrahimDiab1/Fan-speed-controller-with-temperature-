@@ -1,0 +1,338 @@
+??:??:?? **** Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./gpio.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./gpio.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./gpio.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+../dc_motor.c: In function 'DcMotor_Init':
+../dc_motor.c:20: error: expected expression before '.' token
+../dc_motor.c:20: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:21: error: expected expression before '.' token
+../dc_motor.c:21: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:23: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:23: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:23: error: expected declaration specifiers or '...' before numeric constant
+../dc_motor.c:23: error: conflicting types for 'GPIO_writePin'
+../dc_motor.c:23: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../gpio.h:68: error: previous declaration of 'GPIO_writePin' was here
+../dc_motor.c:24: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:24: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:24: error: expected declaration specifiers or '...' before numeric constant
+../dc_motor.c:28: error: expected expression before '.' token
+../dc_motor.c:28: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:29: error: expected expression before '.' token
+../dc_motor.c:29: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:31: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:31: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:31: error: expected declaration specifiers or '...' before numeric constant
+../dc_motor.c:32: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:32: error: expected declaration specifiers or '...' before ',' token
+../dc_motor.c:32: error: expected declaration specifiers or '...' before numeric constant
+make: *** [dc_motor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+../dc_motor.c: In function 'DcMotor_Init':
+../dc_motor.c:19: error: expected expression before '.' token
+../dc_motor.c:19: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:20: error: expected expression before '.' token
+../dc_motor.c:20: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:22: error: expected expression before ',' token
+../dc_motor.c:23: error: expected expression before ',' token
+../dc_motor.c:25: error: expected expression before '.' token
+../dc_motor.c:25: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:26: error: expected expression before '.' token
+../dc_motor.c:26: error: too few arguments to function 'GPIO_setupPinDirection'
+../dc_motor.c:28: error: expected expression before ',' token
+../dc_motor.c:29: error: expected expression before ',' token
+../dc_motor.c: In function 'DcMotor_Rotate':
+../dc_motor.c:35: warning: implicit declaration of function 'PWM_Timer0_Start'
+../dc_motor.c:38: error: expected expression before ',' token
+../dc_motor.c:39: error: expected expression before ',' token
+../dc_motor.c:40: error: expected expression before ',' token
+../dc_motor.c:41: error: expected expression before ',' token
+../dc_motor.c:44: error: expected expression before ',' token
+../dc_motor.c:45: error: expected expression before ',' token
+../dc_motor.c:46: error: expected expression before ',' token
+../dc_motor.c:47: error: expected expression before ',' token
+make: *** [dc_motor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+../dc_motor.c: In function 'DcMotor_Init':
+../dc_motor.c:19: error: expected expression before ',' token
+../dc_motor.c:20: error: expected expression before ',' token
+../dc_motor.c:22: error: expected expression before ',' token
+../dc_motor.c:23: error: expected expression before ',' token
+../dc_motor.c:25: error: expected expression before ',' token
+../dc_motor.c:26: error: expected expression before ',' token
+../dc_motor.c:28: error: expected expression before ',' token
+../dc_motor.c:29: error: expected expression before ',' token
+../dc_motor.c: In function 'DcMotor_Rotate':
+../dc_motor.c:35: warning: implicit declaration of function 'PWM_Timer0_Start'
+../dc_motor.c:38: error: expected expression before ',' token
+../dc_motor.c:39: error: expected expression before ',' token
+../dc_motor.c:40: error: expected expression before ',' token
+../dc_motor.c:41: error: expected expression before ',' token
+../dc_motor.c:44: error: expected expression before ',' token
+../dc_motor.c:45: error: expected expression before ',' token
+../dc_motor.c:46: error: expected expression before ',' token
+../dc_motor.c:47: error: expected expression before ',' token
+make: *** [dc_motor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:14:
+../adc.h:37: error: expected specifier-qualifier-list before 'ADC_ReferenceVolatge'
+../adc.c:21: error: conflicting types for 'ADC_init'
+../adc.h:45: error: previous declaration of 'ADC_init' was here
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:14:
+../adc.h:37: error: expected specifier-qualifier-list before 'ADC_ReferenceVolatge'
+../adc.c: In function 'ADC_init':
+../adc.c:30: error: request for member 'ref_volt' in something not a structure or union
+../adc.c:30: error: expected ')' before ';' token
+../adc.c:31: error: expected ';' before '}' token
+../adc.c: At top level:
+../adc.c:39: error: expected identifier or '(' before 'volatile'
+../adc.c:39: error: expected ')' before '(' token
+../adc.c:40: error: expected identifier or '(' before 'volatile'
+../adc.c:40: error: expected ')' before '(' token
+../adc.c:41: error: expected identifier or '(' before '}' token
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../lcd.c:11:
+../lcd.h:19:1: warning: "/*" within comment
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:128: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:15:
+../lcd.h:19:1: warning: "/*" within comment
+../main.c:19: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:24: error: invalid type argument of '->' (have 'ADC_ConfigType')
+../main.c:25: error: invalid type argument of '->' (have 'ADC_ConfigType')
+../main.c:33: error: incompatible type for argument 1 of 'ADC_init'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:128: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:19: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+../pwm.c:19:2: error: #error "speed input is over 100 percent"
+make: *** [pwm.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:128: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:19: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Fan Controller ****
+make all 
+Building target: Fan Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan Controller.map -mmcu=atmega16 -o "Fan Controller.elf"  ./adc.o ./dc_motor.o ./gpio.o ./lcd.o ./lm35_sensor.o ./main.o ./pwm.o   
+avr-gcc.exe: Controller.map: No such file or directory
+make: *** [Fan Controller.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

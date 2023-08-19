@@ -1,0 +1,31 @@
+ /******************************************************************************
+ *
+ * Module: Fan Controller System
+ *
+ * File Name: main.c
+ *
+ * Description: main file of the project
+ *
+ * Author: Ibrahim_Diab
+ *
+ *******************************************************************************/
+
+
+#include "gpio.h"
+#include "pwm.h"
+#include "lm35_sensor.h"
+#include "lcd.h"
+#include "dc_motor.h"
+#include "adc.h"
+
+void main(void){
+
+	void LCD_init();
+
+
+
+	while(1){
+
+	}
+
+}

@@ -1,0 +1,22 @@
+ /******************************************************************************
+ *
+ * Module: DC Motor
+ *
+ * File Name: dc_motor.c
+ *
+ * Description: Source file for the DC Motor driver
+ *
+ * Author: Ibrahim_Diab
+ *
+ *******************************************************************************/
+
+
+#include "std_types.h"
+#include "dc_motor.h"
+#include "gpio.h"
+
+void DcMotor_Init(void){
+
+	GPIO_setupPinDirection(DC_MOTOR_IN1_PORT_ID.DC_MOTOR_IN1_PIN_NUM,PIN_OUTPUT);
+
+}
